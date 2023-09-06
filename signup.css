@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+}
+
+:root {
+  --primary-color: #fff;
+  --secondary-color: #000; 
+}
+
+.dark-theme {
+  --primary-color: #000;
+  --secondary-color: #fff;
+}
+
+#preloader {
+    background: black url(whaleimages/loading.gif) no-repeat center center;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    position: fixed;
+
+}
+
+#theme {
+  height: 30px;
+  position: absolute;
+  top: 94%;
+  left: 1%;
+}
+
+.banner {
+    background-color: var(--secondary-color);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.themes {
+  cursor: pointer;
+}
+
+.form-container {
+    width: 50%;
+    backdrop-filter: blur(10px);
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: rgba(62, 62, 62, 0.25);;
+    text-align: right;
+}
+
+.moreinfo {
+    width: 550px;
+    position: absolute;
+    top: 10%;
+    color: var(--primary-color);
+    left: 0;
+    
+}
+
+.moreinfo h1 {
+    margin-right: 70px;
+    font-size: 50px;
+
+}
+
+.moreinfo p {
+    color: var(--primary-color);
+    opacity: 50%;
+    margin-top: 20px;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+#whale {
+    position: absolute;
+    left: 10%;
+    top: 20%;
+
+}
+
+
+form {
+    margin-top: 50px;
+  }
+
+  .form-control {
+    width: 300px;
+    background: none;
+    border: 2px solid rgba(62, 62, 62, 0.25);
+    border-radius: 23px;
+    outline: none;
+    color: var(--primary-color);
+    font-size: 18px;
+    text-align: center;
+
+  }
+  
+  .main-form{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+  } 
+  
+  input {
+    height: 45px;
+  }
+
+
+
+  form .submit {
+    background: rgb(2, 182, 59);
+    border-color: transparent;
+    color: var(--primary-color);
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    height: 50px;
+    margin-top: 20px;
+    border-radius: 25px;
+  }
+ 
+  form .submit:hover {
+    background: rgb(1, 120, 39);
+    cursor: pointer;
+  }
+
+  a {
+    color: rgb(2, 182, 59);
+  }
+
+@media only screen and (max-width:700px) {
+  .banner {
+    background-color: var(--secondary-color);
+    background-size: cover;
+    background-position: center;
+    height: 120vh;
+    width: 100%;
+}
+
+.form-container {
+    width: 100%;
+    backdrop-filter: blur(10px);
+    height: 120vh;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: rgba(62, 62, 62, 0.25);;
+    text-align: center;
+}
+
+.moreinfo {
+    width: 300px;
+    position: absolute;
+    top: 10%;
+    color: var(--primary-color);
+    left: 0;
+    margin-left: 40px
+}
+
+.moreinfo h1 {
+    margin-right: 70px;
+    font-size: 40px;
+    margin-left: 70px;
+}
+
+.moreinfo p {
+    color: var(--primary-color);
+    opacity: 50%;
+    margin-top: 20px;
+    margin-right: 10px;
+    font-size: 17px;
+}
+
+.whale {
+    position: absolute;
+    left: 1%;
+    top: 20%;
+    display: none;
+}
+
+
+form {
+    margin-top: 50px;
+    transition: all 4s ease-in-out;
+  }
+
+  .form-control {
+    width: 300px;
+    background: none;
+    border: 2px solid rgba(62, 62, 62, 0.25);
+    border-radius: 23px;
+    outline: none;
+    color: var(--primary-color);
+    font-size: 18px;
+    text-align: center;
+
+  }
+  
+  .main-form{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+  } 
+  
+  input {
+    height: 45px;
+  }
+
+
+
+  form .submit {
+    background: rgb(2, 182, 59);
+    border-color: transparent;
+    color: var(--primary-color);
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    height: 50px;
+    margin-top: 20px;
+    border-radius: 25px;
+  }
+ 
+  form .submit:hover {
+    background: rgb(1, 120, 39);
+    cursor: pointer;
+  }
+
+  a {
+    color: rgb(2, 182, 59);
+  }
+}

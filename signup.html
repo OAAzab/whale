@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Sign Up in Whale</title>
+    <link href="signup.css" rel="stylesheet">
+    <meta name="viewport" content="width =device-width, initial-scale=1">
+    <link href="whaleimages/whitewhale.png" rel="shortcut icon">
+    </head>
+    <body>
+        <div id="preloader">
+        </div>
+
+        <div class="banner">
+            <img src="whaleimages/whitewhale.png" id="whale">
+           <div class="themes"> <img src="whaleimages/sun.png" id="theme"></div>
+           <div class="form-container">
+             <div class="moreinfo">
+                <h1>Sign Up</h1>
+                <p class="idk">We are happy to have you in Whale.</p>
+                <form class="main-form" action="mainwhale.html" method="get">
+                    <br> <br> <br>
+                    <input name="firstname" type="text" class="form-control" placeholder="First Name" required>
+                    <br> <br>
+                    <input name="lastname" type="text" class="form-control" placeholder="Last Name" required>
+                    <br> <br>
+                    <input name="email" type="email" class="form-control" placeholder="Email" required>
+                    <br>
+                    <br>
+                    <input name="password" type="password" class="form-control" placeholder="Create Password" required>
+                    <br> <br>
+                    <input name="password" type="password" class="form-control" placeholder="Re-Enter Password" required>
+                   <br>
+                    <input type="submit" class="form-control submit" value="Sign Up">
+                    <br>
+                    <p>   Already have an account? <a href="index.html">Log in</a></p>
+                  </form>
+             </div>
+           </div>
+
+        </div>
+
+
+          <script>
+
+               var loader = document.getElementById("preloader");
+               window.addEventListener("load", function() {
+                  
+                loader.style.display = "none";
+
+
+               })
+            
+          </script>
+              
+        <script>
+            var theme = document.getElementById("theme");
+            var whale = document.getElementById("whale");
+
+            theme.onclick = function(){
+              document.body.classList.toggle("dark-theme");
+              if(document.body.classList.contains("dark-theme")) {
+                theme.src = "whaleimages/moon.png"
+                whale.src = "whaleimages/whalelogo.png"
+              }
+              else {
+                theme.src = "whaleimages/sun.png"
+                whale.src = "whaleimages/whitewhale.png"
+              }
+              
+            }
+        </script>
+
+    </body>
+</html>
